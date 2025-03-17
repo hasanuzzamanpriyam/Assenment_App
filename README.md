@@ -97,7 +97,21 @@ This document provides instructions for testing the APIs defined in the `routes/
 2. Ensure the `Content-Type` header is set to `application/json` for requests with a body.
 3. Verify the responses match the expected output.
 
-## Notes
+## How to Run the Laravel Project
 
-- Replace `http://localhost` with your application's base URL if testing on a server.
-- Ensure proper authentication if required for any endpoint.
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+   cd Assesment_App
+
+2. **Set Up Environment Copy the .env.example file to .env and configure the environment variables:
+   ```bash
+   cp .env.example .env
+
+3. Database Migrations Ensure your database is running, then execute:
+   ```bash
+   php artisan migrate
+
+4. Start the Development Server Run the following command to start the Laravel development server:
+   ```bash
+   php artisan serve
